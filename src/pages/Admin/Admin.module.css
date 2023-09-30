@@ -1,0 +1,7 @@
+.Admin{
+    .dates{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 10px;
+    }
+}
