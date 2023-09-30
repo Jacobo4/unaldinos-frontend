@@ -37,12 +37,10 @@ const Admin = () => {
     useEffect(() => {
 
         const fetchDates = async () => {
-
-            const response = await fetch(`${import.meta.env.VITE_API_URL}/dates`);
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/citas`);
             const data = await response.json();
             setDates(data)
         }
-        console.log('a')
 
         fetchDates();
     }, [])
