@@ -1,0 +1,22 @@
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .thead {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+  }
+  
+  .table th {
+    font-weight: bold;
+  }
+  
