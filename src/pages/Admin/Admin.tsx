@@ -27,7 +27,7 @@ const Admin = () => {
 
     return (
         <div className={`${styles['Admin']}`}>
-            <h1>Citas</h1>
+            <h1>Contratos</h1>
             {/*Create types*/}
             <div className={styles['dates']}>
                 {dates && dates.map((date: Date) => <DateCard data={date}/>)}
