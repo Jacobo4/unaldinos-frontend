@@ -1,10 +1,8 @@
-import React from "react";
-import DateTableRow from '../DateCard/DateCard';
+import DateTableRow from '../DateRow/DateRow';
 import styles from './DataTable.module.css'; // Import the CSS module
 
 const DateTable = ({ data }) => {
   return (
-    <div>
       <table className={styles.table}>
         <thead className={styles.thead}>
           <tr>
@@ -22,7 +20,6 @@ const DateTable = ({ data }) => {
           ))}
         </tbody>
       </table>
-    </div>
   );
 };
 
