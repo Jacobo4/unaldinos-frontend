@@ -27,7 +27,6 @@
 
 * {
     box-sizing: border-box;
-    //font-family: 'Libre Franklin', 'sans-serif';
     transition: filter 0.3s ease-in-out, background-color 0.3s ease-in-out,
     color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     scroll-behavior: smooth;
