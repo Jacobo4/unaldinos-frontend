@@ -5,11 +5,6 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      sans: ['Libre Franklin', 'ui-sans-serif', 'system-ui'],
-      serif: ['Libre Franklin', 'ui-serif', 'Georgia'],
-      mono: ['Libre Franklin', 'SFMono-Regular'],
-    },
     extend: {
       colors:{
         primary: "#18d399",
