@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import DateCard from "@components/DateCard/DateCard.tsx";
-import Date from "@components/DateCard/DateCard.tsx";
+import AppointmentCard from "@components/AppointmentCard/AppointmentCard.tsx";
+import Date from "@components/AppointmentCard/AppointmentCard.tsx";
 import styles from './Admin.module.css';
 import axios from 'axios';
 import Uploader from "@components/Uploader/Uploader.tsx";
@@ -30,8 +30,8 @@ const Admin = () => {
             <h1>Contratos</h1>
             {/*Create types*/}
             <div className={styles['dates']}>
-                {dates && dates.map((date: Date) => <DateCard data={date}/>)}
-                {dates && dates.map((date: Date) => <DateCard data={date}/>)}
+                {dates && dates.map((date: Date) => <AppointmentCard data={date}/>)}
+                {dates && dates.map((date: Date) => <AppointmentCard data={date}/>)}
 
             </div>
 

@@ -1,12 +1,12 @@
 // Core
 import React, {useState} from "react";
 // Styles
-import styles from './DateCard.module.css';
+import styles from './AppointmentCard.css';
 // Icons
 import {BiSolidLockAlt, BiSolidLockOpenAlt} from "react-icons/bi";
 import {AiOutlineStar, AiFillStar} from "react-icons/ai";
 
-export interface Date {
+export interface Appointment {
     model: string;
     pk: number;
     fields: {
@@ -20,18 +20,18 @@ export interface Date {
 }
 
 interface Props {
-    data: Date;
+    data: Appointment;
     toggleFavoriteCb: (isFavorite: boolean) => void;
 }
 
 /**
- * DateCard component
+ * AppointmentCard component
  * @param data Dates data
  * @constructor
  * @return JSX.Element
  * @category Components
  */
-const DateCard: React.FC<Props> = ({data}) => {
+const AppointmentCard: React.FC<Props> = ({data}) => {
 
     const [isFavorite, setIsFavorite] = useState<boolean>(false);
 
@@ -42,7 +42,7 @@ const DateCard: React.FC<Props> = ({data}) => {
         setIsFavorite(!isFavorite);
     }
     return (
-        <div className={`${styles['DateCard']} shadow-md rounded-md`}>
+        <div className={`${styles['AppointmentCard']} shadow-md rounded-md`}>
             <div className={styles['header']}>
                 <div>
                     <span>Paciente: {data.fields.paciente}</span>
@@ -79,4 +79,4 @@ const DateCard: React.FC<Props> = ({data}) => {
 
 }
 
-export default DateCard;
+export default AppointmentCard;

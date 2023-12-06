@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {Link} from "react-router-dom";
+import LoginButton from "@components/LoginButton/LoginButton.tsx";
 
 
 function Header() {
@@ -37,8 +38,8 @@ function Header() {
                 </div>
 
                 {/* Navbar links */}
-                <div className={`md:flex ${isOpen ? 'block' : 'hidden'} mt-4 md:mt-0`}>
-
+                <div className={`md:flex ${isOpen ? 'block' : 'hidden'} items-center mt-4 md:mt-0`}>
+                    <LoginButton/>
                     <Link className={'text-white hover:text-gray-300 md:ml-4'} to={'/admin'}>Admin</Link>
                     <Link className={'text-white hover:text-gray-300 md:ml-4'} to={'/profile'}>Profile</Link>
                 </div>
